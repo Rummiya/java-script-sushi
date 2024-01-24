@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>JavaScript Sushi</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootst	rap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="img/logo/logo.svg" width="92" alt="Суши и пицца">
+			<div class="display-4">Доставка роллов</div>
+			<p class="lead">Оперативно и вкусно</p>
+		</div>
+	</header>
+
+	<div class="container">
+
+		<div id="carouselExampleFade" class="carousel slide carousel-fade">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="./img/sushi/sushi-1.jpeg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="./img/sushi/sushi-2.jpg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="./img/sushi/sushi-3.jpg" class="d-block w-100" alt="...">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		
+	</div>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row" id="product-container">
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
+						<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+						
+
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span>
+								<span class="delivery-cost">0 ₽</span> 
+								<br><span class="small">При заказе от 600 ₽ доставка бесплатно</span>
+							</p>
+							<p>
+								<span class="h5">Итого:</span> 
+								<span class="total-price">0</span> 
+								<span class="rouble">₽</span>
+							</p>
+						</div>
+						<!-- // Стоимость заказа -->
+
+					</div>
+
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+					<!-- // Оформить заказ -->
+
+				</div>
+				<!-- // Корзина -->
+
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container text-center pb-4 pt-5 bg-white">
+			<p>Created by Rummiya :)</p>
+		</div>
+	</footer>
+
+	<!-- Подключаем скрипты -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="./js/renderProduct.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter.js"></script>
+	<script src="./js/card.js"></script>
+	<script src="https://kit.fontawesome.com/42741c620a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
