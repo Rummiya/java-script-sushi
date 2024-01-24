@@ -16,6 +16,80 @@ h3, h4 {
 .header {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.header-logo__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-logo__content h5 {
+	margin-bottom: 0;
+	font-size: 24px;
+}
+
+.header-logo__content p {
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
+	list-style: none;
+}
+
+.header-menu li {
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+}
+
+.header-menu li:hover {
+	color: #EB5A1E;
+} 
+
+.header-info {
+	display: flex;
+	column-gap: 30px;
+}
+
+.fa-phone {
+	margin-right: 8px;
+}
+
+.tel {
+	transition: 0.2s ease-in;
+	cursor: pointer;
+}
+
+.tel:hover {
+	color: #EB5A1E;
+}
+
+.tel span  {
+	font-weight: 600;
+}
+
+.cart-shopping {
+	transition: 0.2s ease-in;
+	cursor: pointer;
+}
+
+.cart-shopping:hover {
+	color: #EB5A1E;
+}
+
+.fa-cart-shopping {
+	font-size: 17px;
 }
 
 .product-img {
@@ -141,12 +215,12 @@ h3, h4 {
 	padding-left: 15px;
 }
 
-.fa-solid {
+.fa-trash {
 	transition: 0.2s ease-in;
 	cursor: pointer;
 }
 
-.fa-solid:hover {
+.fa-trash:hover {
 	color: #eb5a1e;
 }
 
