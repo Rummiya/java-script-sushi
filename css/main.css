@@ -191,6 +191,7 @@ h3, h4 {
 
 .card {
 	border-radius: 10px;
+	max-width: 350px;
 }
 
 .cart-item {

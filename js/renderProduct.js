@@ -13,12 +13,16 @@ async function getProducts () {
 function renderProduct (productsArray) {
     productsArray.forEach(item => {
         const productHTML = `
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4" data-id="${item.id}">
                     <img class="product-img" src="img/roll/${item.imgSrc}" alt="">
                     <div class="card-body text-center">
                         <h4 class="item-title">${item.title}</h4>
-                        <p><small data-items-in-box class="text-muted">${item.itemInBox} шт.</small></p>
+                        <p>
+                            <small data-items-in-box class="text-muted">${item.itemInBox} шт.</small>
+                            <small>/</small>
+                            <small class="price__weight">${item.weight}г.</small>
+                        </p>
 
                         <div class="details-wrapper">
                             <div class="items counter-wrapper">
@@ -28,12 +32,11 @@ function renderProduct (productsArray) {
                             </div>
 
                             <div class="price">
-                                <div class="price__weight">${item.weight}г.</div>
                                 <div class="price__currency">${item.price} ₽</div>
                             </div>
                         </div>
 
-                        <button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+                        <button data-cart type="button" class="btn btn-block btn-outline-warning">Добавить в корзину</button>
 
                     </div>
                 </div>

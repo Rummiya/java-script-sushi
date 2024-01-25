@@ -1,55 +1,55 @@
 [
     {
         "id": 1,
-        "title": "Филадельфия хит ролл",
+        "title": "Запеченый сет",
         "itemInBox": 6,
-        "weight": 180,
-        "price": 300,
-        "imgSrc": "philadelphia.jpg"
+        "weight": 870,
+        "price": 1250,
+        "imgSrc": "roll-set-2.jpg"
     },
     
     {
         "id": 2,
-        "title": "Калифорния темпура",
+        "title": "Сет темпура",
         "itemInBox": 8,
-        "weight": 205,
-        "price": 320,
-        "imgSrc": "california-tempura.jpg"
+        "weight": 805,
+        "price": 1100,
+        "imgSrc": "roll-set-2.jpg"
     },
 
     {
         "id": 3,
-        "title": "Запеченый ролл «Калифорния»",
+        "title": "Сет «Калифорния»",
         "itemInBox": 6,
-        "weight": 182,
-        "price": 230,
-        "imgSrc": "zapech-california.jpg"
+        "weight": 782,
+        "price": 920,
+        "imgSrc": "roll-set-2.jpg"
     },
 
     {
         "id": 4,
-        "title": "Филадельфия",
+        "title": "Сет «Филадельфия»",
         "itemInBox": 6,
-        "weight": 180,
-        "price": 300,
-        "imgSrc": "philadelphia.jpg"
+        "weight": 880,
+        "price": 1050,
+        "imgSrc": "roll-set-2.jpg"
     },
 
     {
         "id": 5,
-        "title": "Rummiya Krutaya",
+        "title": "Зеленый сет",
         "itemInBox": 6,
-        "weight": 180,
-        "price": 300,
-        "imgSrc": "philadelphia.jpg"
+        "weight": 780,
+        "price": 1250,
+        "imgSrc": "roll-set-2.jpg"
     },
 
     {
-        "id": 5,
-        "title": "Rummiya Krutaya",
+        "id": 6,
+        "title": "Семейный сет",
         "itemInBox": 6,
-        "weight": 180,
-        "price": 300,
-        "imgSrc": "philadelphia.jpg"
+        "weight": 900,
+        "price": 2300,
+        "imgSrc": "roll-set-2.jpg"
     }
 ]
