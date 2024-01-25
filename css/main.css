@@ -13,10 +13,26 @@ h3, h4 {
 
 }
 
+.btn-orange {
+	padding: 10px 25px;
+	background-color: #EB5A1E;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.2s ease-in;
+}
+
+.btn-orange:hover {
+	background-color: #d45a26;
+}
+
 .header {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background-color: #dde2e2;
 }
 
 .header-logo {
@@ -45,6 +61,8 @@ h3, h4 {
 	align-items: center;
 	column-gap: 25px;
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .header-menu li {
@@ -273,6 +291,7 @@ h3, h4 {
 }
 
 .carousel-inner {
+	padding-top: 120px;
 	margin-bottom: 50px;
 	height: 600px;
 }
@@ -280,6 +299,32 @@ h3, h4 {
 .carousel-item img {
 	object-fit: contain;
 	background-position: center center;
+}
+
+.trash {
+	position: fixed;
+	z-index: 3;
+	width: 400px;
+	height: 100vh;
+	background-color: #F8F9F9;
+	padding: 60px 10px;
+	overflow-y: scroll;
+	border-left: 5px solid rgba(0,0,0,.125);
+	right: -400px;
+	transition: 0.4s ease-in;
+}
+
+.fa-xmark {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	font-size: 26px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+}
+
+.fa-xmark:hover {
+	color: #EB5A1E;
 }
 
 .footer .container{
