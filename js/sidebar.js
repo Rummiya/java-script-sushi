@@ -1,11 +1,21 @@
 const shoppingIcon = document.querySelector('.cart-shopping');
-const trash = document.getElementById('trash');
-const xmark = document.getElementById('xmark')
+const sidebar = document.getElementById('sidebar');
+const xmarkIcon = document.getElementById('xmark');
+const listIcon = document.querySelector('.fa-list');
+const submenu = document.querySelector('.header-submenu');
 
 shoppingIcon.addEventListener('click', () => {
-    trash.style.right = '0px';
+    sidebar.style.right = '0px';
 });
 
-xmark.onclick = function() {
-    trash.style.right = '-400px'
-}
+xmarkIcon.addEventListener('click', () => {
+    sidebar.style.right = '-400px'
+}); 
+
+listIcon.addEventListener('click', () => {
+    if (submenu.classList.contains('is-active') == true) {
+        submenu.classList.remove('is-active');
+    } else {
+        submenu.classList.add('is-active');
+    }
+});

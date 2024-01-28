@@ -43,7 +43,6 @@ window.addEventListener('click', (event) => {
 
                             <div class="price">
                                 <div class="price__currency">${productInfo.price}</div>
-                                <div class="cart-item__remove"><i class="fa-solid fa-trash" data-action="remove"></i></div>
                             </div>
 
                         </div>
